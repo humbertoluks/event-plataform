@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* opcional para não explodir uma tela totalmente branca no seu navegador */
+body {
+  @apply bg-gray-900 text-gray-100;
+
+  /**
+   * hack para melhorar o serrilhado das fontes no chrome do OSx
+   */
+  -webkit-font-smoothing: antialiased;
+}
